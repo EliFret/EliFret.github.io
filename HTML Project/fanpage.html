@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCU Fan Culture | Marvel Cinematic Universe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fanpage.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="Images/logo 2.png"></div>
+            <ul class="nav-links">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="fanpage.html">Fanpage</a></li>
+                <li><a href="thoughts.html">Thoughts</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section" style="background-image: url(Images/mcu_heroes.jpg);">
+            <h2>Welcome to the MCU Fanpage</h2>
+            <p>Explore the epic world of Marvel superheroes!</p>
+        </section>
+
+        <section class="content-section">
+            <h2>About the MCU</h2>
+            <p>The Marvel Cinematic Universe (MCU) is a shared universe centered on a series of superhero films produced by Marvel Studios[1]. It has become one of the most successful and popular film franchises in history, featuring iconic characters like Iron Man, Captain America, and Thor[1].</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Popular MCU Characters</h2>
+            <ul>
+                <li>Iron Man</li>
+                <li>Captain America</li>
+                <li>Black Widow</li>
+                <li>Thor</li>
+                <li>Hulk</li>
+                <li>Spider-Man</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>MCU Phases</h2>
+            <p>The MCU is divided into phases, each culminating in an Avengers movie[1]. Here's a brief overview:</p>
+            <ul>
+                <li><strong>Phase One:</strong> Introduced the core Avengers team</li>
+                <li><strong>Phase Two:</strong> Expanded the universe with new heroes</li>
+                <li><strong>Phase Three:</strong> Culminated in the epic Infinity Saga</li>
+                <li><strong>Phase Four:</strong> Introduced the multiverse concept</li>
+            </ul>
+        </section>
+
+        <section class="impact">
+            <h2>Impact on Fans</h2>
+            <p>The MCU has cultivated a vibrant community of fans through conventions, merchandise, and online forums...</p>
+            <img src="Images/fan_convention.jpg" alt="Fan Convention">
+        </section>
+
+        <section class="forum-section">
+            <h2>Join the Discussion!</h2>
+            <form id="postForm">
+                <label for="username">Your Name:</label><br>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="userPost">Your Post:</label><br>
+                <textarea id="userPost" name="userPost" rows="4" required></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form><br><br>
+
+            <div class="posts-section">
+                <h3>Recent Posts:</h3>
+                <ul class="post-list" id="postList"></ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Marvel Cinematic Universe</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('postForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            const username = document.getElementById('username').value;
+            const userPost = document.getElementById('userPost').value;
+
+            const postList = document.getElementById('postList');
+            
+            // Create a new list item
+            const newPost = document.createElement('li');
+            newPost.classList.add('post-item');
+            newPost.textContent = `${username}: ${userPost}`;
+            
+            // Append the new post to the list
+            postList.appendChild(newPost);
+
+            // Clear the form
+            this.reset();
+        });
+    </script>
+</body>
+</html>

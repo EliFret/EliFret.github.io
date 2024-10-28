@@ -1,0 +1,53 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: red;
+}
+
+h2, h3, main p, b, ol, ul{
+    color: antiquewhite;
+}
+
+section{
+    padding-bottom: 5px;
+}
+
+.blackpanther{
+    padding-top: 25px;
+
+}
+
+.panther{
+    font-size: 25px;
+    color: red;
+}
+
+.blackpanther h4{
+    color: red;
+}
+
+ul{
+    padding-top: 50px;
+}
+
+.ironman h3, b{
+    color: red;
+}
+
+.man{
+    font-size: 25px;
+}
+
+li{
+    color: red;
+}
+
+.captainamerica h3{
+    color: red;
+    font-size: 25px;
+}
+
+ol{
+    padding-left: 15px;
+}

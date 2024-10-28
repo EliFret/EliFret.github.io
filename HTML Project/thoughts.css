@@ -1,0 +1,25 @@
+.thoughts {
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: red;
+}
+
+button, input {
+    border-style:solid;
+}
+
+h2, main p, label{
+    color: antiquewhite;
+}
+footer{
+    position: fixed;
+}
+
+html{
+    background-position: auto;
+}

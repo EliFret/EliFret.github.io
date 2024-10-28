@@ -1,0 +1,34 @@
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: red;
+}
+
+h2, main p, ul, h3, label{
+    color: antiquewhite;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    
+}
+
+main {
+    padding: 2rem;
+}
+.hero-section{
+    background-size: cover;
+    position: relative;
+    
+    text-align: center;
+    padding: 4rem 0;
+}
+.content-section, .impact, .forum-section {
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+}

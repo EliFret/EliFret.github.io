@@ -1,0 +1,63 @@
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0 auto;
+   
+}
+h1, h2, h3 {
+    color: #e62429;
+}
+.movie {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    color: antiquewhite;
+}
+.movie h3 {
+    margin-bottom: 5px;
+    color: antiquewhite;
+}
+.movie p {
+    margin: 5px 0;
+    color: antiquewhite;
+}
+
+main p, ul, ol{
+    color: antiquewhite;
+}
+
+.phase{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.movielist{
+    border-bottom: 1px solid #ddd;
+}
+
+.movies{
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    color: antiquewhite;
+}
+
+.movies h3 {
+    margin-bottom: 5px;
+    color: antiquewhite;
+}
+.movies p {
+    margin: 5px 0;
+    color: antiquewhite;
+}
+
+ul, ol{
+    padding-left: 10px;
+}
