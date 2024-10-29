@@ -1,0 +1,76 @@
+img {
+    border: 5px;
+    height: 200px;
+    width: auto;
+}
+ 
+div {
+    padding-left: 5px;
+    font-size: 19px;
+    color: rgb(160, 86, 16);
+}
+
+h1 {
+text-align: center;
+color: blue;
+font-size: 27px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+    color: yellow;
+    font-style: bold;
+    }
+
+h3 {
+    color: black;
+}
+
+h6 {
+    text-align: center;
+    font-size: 30px;
+    width: auto;
+    color: royalblue;
+}
+
+h4 {
+    color: blue;
+    font-size: 27px;
+    text-align: center;
+}
+
+h5 {
+    font-size: 27px;
+}
+
+body {
+    background-image: url(subhome-ai.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: var(auto);
+    opacity: calc(20px);
+}
+
+p {
+    color: yellowgreen;
+}
+
+b1 {
+    color: red;
+    font-size: 27px;
+}
+b2 {
+    color: crimson;
+    font-style: italic;
+}
+
+u {
+    color: aqua;
+}
+
+i { 
+    font-size: 17px;
+    color: skyblue;
+    font-style: oblique;
+}
