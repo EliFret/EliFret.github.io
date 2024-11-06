@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <i class="hello"></i>
+    <p id="whocares"></p>
+    <h1 id="h1"></h1><br>
+    <script>
+var number1 = window.prompt ("Please enter a number")
+var number2 = window.prompt ("Now enter a second number")
+
+
+var result = parseInt(number1) + parseInt(number2)
+console.log (" The value of " + number1 + " + " + number2 + " is " + result)
+console.log(document.getElementById("whocares"))
+document.getElementById("whocares").innerHTML = " The value of " + number1 + " + " + number2 + " is " + result
+
+var result = parseInt(number1) - parseInt(number2)
+console.log (" The value of " + number1 + " - " + number2 + " is " + result)
+console.log(document.getElementById("h1"))
+document.getElementById("h1").innerHTML = " The value of " + number1 + " - " + number2 + " is " + result
+
+var result = parseInt(number1) * parseInt(number2)
+console.log (" The value of " + number1 + " * " + number2 + " is " + result)
+console.log(document.write)
+document.write.style.color = "red";(" The value of " + number1 + " * " + number2 + " is " + result + "<br><br>")
+
+var result = parseInt(number1) / parseInt(number2)
+console.log (number1 + " / " + number2 + " = " + result)
+document.write(number1 + " / " + number2 + " = " + result + "<br")
+
+
+var x = "y+9"
+var y= window.prompt("Please input an entirely different number")
+var result = parseInt(y) + parseInt(9)
+console.log(document.getElementsByClassName("hello")[0])
+document.getElementsByClassName("hello")[0].innerHTML = "If x = " + x + " and y = " + y + " then x = " + result
+
+</script>
+</body>
+</html>
