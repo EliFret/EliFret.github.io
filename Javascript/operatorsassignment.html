@@ -4,41 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<style>
+    html{
+        background-image: url(pexels-photo-450035.jpg);
+        background-repeat:none;
+        background-position: absolute;
+    }
+</style>
 </head>
+
 <body>
+    <l id="variables"></l>
     <i class="hello"></i>
     <p id="whocares"></p>
-    <h1 id="h1"></h1><br>
+    <h id="h1"></h><br>
+    <p id="h2"></p>
+    <c id="greater"></c>
+    <f id="lesser"></f>
     <script>
-var number1 = window.prompt ("Please enter a number")
+var number1 = window.prompt ("Please enter a first number")
 var number2 = window.prompt ("Now enter a second number")
+document.getElementById("variables").innerHTML = "Your first number is " + "<span style='color:blueviolet; font-size:30px;'>"+ number1 +"</span>" + " and your second number is " + "<span style='color: coral; font-size:30px;'>"+ number2 +"</span>" + "<br><br>"
 
-
-var result = parseInt(number1) + parseInt(number2)
-console.log (" The value of " + number1 + " + " + number2 + " is " + result)
+var result1 = parseInt(number1) + parseInt(number2)
+console.log (" The value of" + number1 + " + " + number2 + " is " + result1)
 console.log(document.getElementById("whocares"))
-document.getElementById("whocares").innerHTML = " The value of " + number1 + " + " + number2 + " is " + result
+document.getElementById("whocares").innerHTML = " The value of " + "<span style='color:blue; font-size:30px;'>" + number1 +"</span>" + "  + " + "<span style='color:yellow; font-size:30px;'>"+number2+"</span>" + " is " + "<span style='color:green; font-size:60px;'>" + result1 + "</span>"
 
-var result = parseInt(number1) - parseInt(number2)
-console.log (" The value of " + number1 + " - " + number2 + " is " + result)
+var result2 = parseInt(number1) - parseInt(number2)
+console.log (" The value of " + number1 + " - " + number2 + " is " + result2)
 console.log(document.getElementById("h1"))
-document.getElementById("h1").innerHTML = " The value of " + number1 + " - " + number2 + " is " + result
+document.getElementById("h1").innerHTML = " The value of " + "<span style='color:khaki; font-size:30px;'>" + number1 +"</span>" + " - " + "<span style='color:silver; font-size:30px;'>"+number2+"</span>" + " is " + "<span style='color:deeppink; font-size:60px;'>" +result2 +"</span>"
+document.getElementById("h1").style.fontFamily = "Arial";
 
-var result = parseInt(number1) * parseInt(number2)
-console.log (" The value of " + number1 + " * " + number2 + " is " + result)
+
+var result3 = parseInt(number1) * parseInt(number2)
+console.log (" The value of " + number1 + " * " + number2 + " is " + result3)
 console.log(document.write)
-document.write.style.color = "red";(" The value of " + number1 + " * " + number2 + " is " + result + "<br><br>")
+document.write(" The value of " + "<span style='color:bisque; font-size:30px;'>"+number1 +"</span>" + " * " + "<span style='color:burlywood; font-size:30px;'>"+number2 +"</span>" + " is " + "<span style='color:blanchedalmond; font-size:60px;'>"+ result3 +"</span>" + "<br><br>")
 
-var result = parseInt(number1) / parseInt(number2)
-console.log (number1 + " / " + number2 + " = " + result)
-document.write(number1 + " / " + number2 + " = " + result + "<br")
+var result4 = parseInt(number1) / parseInt(number2)
+console.log (number1 + " / " + number2 + " = " + result4)
+document.write("The value of "+ "<span style='color:beige; font-size:30px;'>"+number1 +"</span>" + " / " + "<span style='color:cadetblue; font-size:30px;'>"+ number2 +"</span>" + " = " + "<span style='color:cornflowerblue; font-size:60px;'>"+  result4 +"</span>" + "<br")
 
+var result5 = parseInt(number1) % parseInt(number2)
+console.log (" The value of " + number1 + " % " + number2 + " is " + result5)
+console.log(document.getElementById("h2"))
+document.getElementById("h2").innerHTML = " The value of " + "<span style='color:darkgreen; font-size:30px;'>"+number1+"</span>" + " % " + "<span style='color:darkmagenta; font-size:30px;'>"+number2+"</span>" + " is " + "<span style='color:magenta; font-size:60px;'>"+result5+"</span>"
+
+var result6 = parseInt(number1) > parseInt(number2)
+console.log (" The value of " + number1 + " > " + number2 + " is " + result6)
+console.log(document.getElementById("greater"))
+document.getElementById("greater").innerHTML = " The value of " + "<span style='color:darkcyan; font-size:30px;'>"+number1 +"</span>" +" > " + "<span style='color:darkorange; font-size:30px;'>"+number2 +"</span>" +" is " + "<span style='color:darkorchid; font-size:60px;'>"+result6 +"</span>" +"<br>"
+
+var result7 = parseInt(number1) < parseInt(number2)
+
+console.log(document.getElementById("lesser"))
+document.getElementById("lesser").innerHTML = " The value of " + "<span style='color:lightgreen; font-size:30px;'>"+number1 +"</span>" + " < " + "<span style='color:lime; font-size:30px;'>"+number2+"</span>" + " is "+ "<span style='color:maroon; font-size:60px;'>"+result7+"</span>" + "<br>"
 
 var x = "y+9"
 var y= window.prompt("Please input an entirely different number")
-var result = parseInt(y) + parseInt(9)
+var result8 = parseInt(y) + parseInt(9)
 console.log(document.getElementsByClassName("hello")[0])
-document.getElementsByClassName("hello")[0].innerHTML = "If x = " + x + " and y = " + y + " then x = " + result
+document.getElementsByClassName("hello")[0].innerHTML = "If "+ "<span style='color:darkcyan; font-size:30px;'>"+" x = " + x +"</span>" +" and " +"<span style='color:red; font-size:30px;'>"+" y = " + y +"</span>" +" then " + "<span style='color:yellowgreen; font-size:60px;'>" + " x = " + result8 + "</span>"
+// document.getElementsByClassName("hello")[0].style.align = "center";
 
 </script>
 </body>
