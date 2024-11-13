@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions Assignment</title>
+    <style>
+        body{
+            background-image: url(../Javascript/Operation\ and\ Comparison\ Assignment/pexels-photo-450035.jpg);
+            background-size:auto;
+            background-repeat: no-repeat;
+            background-position: relative;
+        }
+    </style>
+    <script>
+        function circumferencesphere(radius){
+            circumference = 2*π*radius
+            return circumference
+        }
+
+        function surfaceareasphere(radius){
+            radiussquare = radius*radius
+            surfacearea = 4*π*radiussquare
+            return surfacearea
+        }
+
+        function volumesphere(radius){
+            radiuscube = radius*radius*radius
+            volume = 4*π*radiuscube
+            return volume
+        }
+    </script>
+</head>
+<body>
+    <p class="circumference"></p>
+    <p class="surfacearea"></p>
+    <p class="volume"></p>
+    <script>
+        const π = 3.141592653589793238462643383279502884197;
+        var r = window.prompt("Please provide a radius of a sphere.")
+        circumference = circumferencesphere(r)
+        surfacearea = surfaceareasphere(r)
+        volume = volumesphere(r)
+
+        document.getElementsByClassName("circumference")[0].innerHTML = "The circumference of the sphere with radius " + "<span style='font-size:20px; color:blue;'>"+r+"</span>"+ " is " + "<span style='font-size:20px; color:red;'>"+circumference+"</span>"
+        document.getElementsByClassName("surfacearea")[0].innerHTML = "The surface area of the sphere with radius " + "<span style='font-size:20px; color:yellowgreen;'>"+r+"</span>"+ " is " + "<span style='font-size:20px; color:green;'>"+surfacearea+"</span>"
+        document.getElementsByClassName("volume")[0].innerHTML = "The volume of the sphere with radius " + "<span style='font-size:20px; color:yellow;'>"+r+"</span>" + " is " + "<span style='font-size:20px; color:gold;'>"+volume+"</span"
+    </script>
+</body>
+</html>
